@@ -9,13 +9,13 @@ import com.cts.eb.dto.EBDTO;
 
 @Repository
 public class EBDAOImpl implements EBDAO {
-	private final static String INSERT_QRY="INSERT INTO EBILL SERVNO,CUSNAME,ADDRESS,MOBILE,EMAIL,UNITS,PRICE";
+	private final static String INSERT_QRY="INSERT INTO EBILL (SERVNO,CUSNAME,ADDRESS,MOBILE,EMAIL,UNITS,PRICE) VALUES(?,?,?,?,?,?,?)";
 	@Autowired
 	private JdbcTemplate  jt;
 	
 	@Override
 	public int saveCustomer(EBBO ebbo) {
-		int result=jt.update(INSERT_QRY,ebbo.getServiceNo(),ebbo.getCustomerName(),ebbo.getAddress(),ebbo.getMobile(),ebbo.getEmail(),ebbo.getBillAmount());
+		int result=jt.update(INSERT_QRY,ebbo.getServiceNo(),ebbo.getCustomerName(),ebbo.getAddress(),ebbo.getMobile(),ebbo.getEmail(),ebbo.getUnits(),ebbo.getBillAmount());
 		return result;
 	}
 

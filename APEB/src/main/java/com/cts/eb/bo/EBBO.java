@@ -6,6 +6,7 @@ public class EBBO {
 	private String address;
 	private long mobile;
 	private String email;
+	private int units;
 	private int billAmount;
 	public long getServiceNo() {
 		return serviceNo;
@@ -36,6 +37,12 @@ public class EBBO {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public int getUnits() {
+		return units;
+	}
+	public void setUnits(int units) {
+		this.units = units;
 	}
 	public int getBillAmount() {
 		return billAmount;
