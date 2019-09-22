@@ -28,10 +28,10 @@ public class EBServiceImpl  implements EBService{
 			price=units*1;
 		}
 		else if(units>=100 && units<200) {
-			price=50+(units*2);
+			price=100+((units-100)*2);
 		}
 		else if(units>=200 && units<500) {
-			price=450+(units*5);
+			price=500+((units-200)*5);
 		}
 		else {
 			price=2950+7050;
