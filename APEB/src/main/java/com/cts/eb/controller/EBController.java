@@ -22,6 +22,7 @@ public class EBController {
 
 	@RequestMapping("/add.htm")
 	public ModelAndView add(@ModelAttribute EBVO ebvo) {
+		
 		EBDTO ebdto=null;
 		ebdto=new EBDTO();
 		ebdto.setServiceNo(Long.parseLong(ebvo.getServiceNo()));

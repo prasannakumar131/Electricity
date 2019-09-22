@@ -11,7 +11,7 @@ import com.cts.eb.dto.EBDTO;
 public class EBDAOImpl implements EBDAO {
 	private final static String INSERT_QRY="INSERT INTO EBILL SERVNO,CUSNAME,ADDRESS,MOBILE,EMAIL,UNITS,PRICE";
 	@Autowired
-	private JdbcTemplate jt;
+	private JdbcTemplate  jt;
 	
 	@Override
 	public int saveCustomer(EBBO ebbo) {

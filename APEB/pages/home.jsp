@@ -8,17 +8,17 @@
 <table>
 <tr>
 <th>ServiceNo</th>
-<td><input type="text" name="serviceNo"></td>
+<td><input type="text" name="sNo"></td>
 </tr><br>
 
 <tr>
 <th>CusName</th>
-<td><input type="text" name="customerName"></td>
+<td><input type="text" name="cName"></td>
 </tr>
 <br>
 <tr>
 <th>Address</th>
-<td><input type="text" name="address"></td>
+<td><input type="text" name="add"></td>
 </tr>
 <br>
 
@@ -36,7 +36,7 @@
 
 <tr>
 <th>Gmail</th>
-<td><input type="text" name="email"></td>
+<td><input type="text" name="gmail"></td>
 </tr>
 <br>
 
@@ -45,6 +45,7 @@
 <th></th>
 <td><input type="submit"  value="Register">
 </tr>
+
 
 </table>
 </center>
